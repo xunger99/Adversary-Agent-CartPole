@@ -7,6 +7,7 @@
 4. Modify __init__.py therein by following the __init__.py here. 
 5. Modify __init__.py under Anaconda3/envs/You_Env_Name/site-packages/gym/envs/ by following the __init__(2).py here.
 6. Test the set-up and environment by running: python CartPole0.py. If everything is OK, a single cart-pole case will be trained. 
+7. A warning/error for time_limit.py could appear, which could be fixed by annotating line 21 of that file, i.e. info["TimeLimit.truncated"] = not done
 
 ## Files: 
 1. CartPole0.py, the RL code for the classical cart-pole system. 
