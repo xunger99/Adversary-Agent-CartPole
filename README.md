@@ -10,7 +10,7 @@
 
 # Possible issues:
 1. A warning/error for time_limit.py could appear, which could be fixed by annotating line 21 of that file, i.e. info["TimeLimit.truncated"] = not done
-2. ../site-packages/rl/callbacks.py, line 245, modify to the following: 
+2. ../site-packages/rl/callbacks.py, line 241, modify to the following: 
     def on_step_begin(self, step, logs):
         """ Print metrics if interval is over """
         if self.step % self.interval == 0:
