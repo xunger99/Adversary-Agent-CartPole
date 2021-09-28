@@ -242,11 +242,10 @@ class TrainIntervalLogger(Callback):
         """ Print metrics if interval is over """
         if self.step % self.interval == 0:
             if len(self.episode_rewards) > 0:
-                print('{} episodes - episode_reward: {:.3f} [{:.3f}, {:.3f}]'.format(len(self.episode_rewards), np.mean(self.episode_rewards), np.min(self.episode_rewards), np.max(self.episode_rewards)))
+                print('{} episodes - episode_reward: { } [{ }, { }]'.format(len(self.episode_rewards), np.mean(self.episode_rewards), np.min(self.episode_rewards), np.max(self.episode_rewards)))
                 print('')
             self.reset()
             print('Interval {} ({} steps performed)'.format(self.step // self.interval + 1, self.step))
-
 
     def on_step_end(self, step, logs):
         """ Update progression bar at the end of each step """
