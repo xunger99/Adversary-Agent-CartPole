@@ -36,7 +36,7 @@ from keras.models import Sequential
 # XunCartPole-v1, reward 100
 # XunCartPole-v3, reward 1
 # XunCartPole-v4, reward 100 vs 1
-env = gym.make('XunCartPole-v1')
+env = gym.make('XunCartPole-v2')
 
 # Define a smart agent (a very small and simple network)
 def agent_NN(states, actions):
